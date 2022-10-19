@@ -25,7 +25,7 @@ SELECT name, max(escape_attempts) FROM animals WHERE neutered = true OR neutered
 SELECT max(weight_kg) AS maxWeight, min(weight_kg) AS minWeight FROM animals;
 SELECT CAST(avg(escape_attempts) AS DECIMAL(5,2)) AS averageEscapeAttempts FROM animals WHERE EXTRACT(year FROM date_of_birth) BETWEEN 1990 AND 2000;
 
-
+--  Day 3 Queries
 BEGIN;
 UPDATE animals
   SET owners_id = '1' WHERE id = '1';
